@@ -1,37 +1,84 @@
-body{
-    margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px;
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 400px;
 }
 
-input{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #13bdad;
-    margin-bottom: 4px;
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #3c4fe0;
+  margin-bottom: 4px;
 }
-button{
-    background:#13bdad;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold ;
-    border: 1px solid #13bdad;
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
 }
-ul{
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
+li {
+  margin-top: 5px;
 }
-li{
-margin-top: 5px;
+a {
+  color: #3c4fe0;
+  text-decoration: none;
 }
-a{
-    color: #13bdad;
+
+/* CSS */
+button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
 }
-#delete-btn{
-    background-color: white;
-    color: #13bdad;
+
+button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.delete-btn {
+  height: 24px;
 }
